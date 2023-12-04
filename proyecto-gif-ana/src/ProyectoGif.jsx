@@ -1,8 +1,10 @@
+import { useState} from 'react';
+import{ AddCategory,GifGrid}from"./components";
 export const ProyectoGif = () => {
 
  //Usando el Hook useState (función que permite agregar estado de React a loscomponentes funcionales)
  //Para evitar el posible error de Javascript por no definir un valor inicial, se le pone un arreglo que tenga 'One Punch' como valor inicial
- const [categories, setCategories] = useState(['One Punch'])
+ const [categories, setCategories] = useState(["Coca-Cola"])
 
  const onAddCategory = (newCategory) => {
     // Si newCategory ya está en la lista de categorías, no hacemos nada y salimos de la
@@ -28,5 +30,6 @@ y una categoría */}
  ))}
     </>
   );
-};
+}
 
+export default ProyectoGif
